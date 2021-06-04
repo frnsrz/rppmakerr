@@ -1,0 +1,380 @@
+@import 'poppins.css';
+
+:root {
+    --main-color: #27ae5f;
+    --secondary-color: #e5e5e5;
+    --text-color: #fff;
+}
+
+textarea
+{
+    white-space: pre-line;
+}
+
+.pengantar
+{
+    color: white;
+    text-align: justify;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    margin-bottom: 13px;
+}
+
+.input-form
+{
+    color: white;
+    text-align: justify;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    margin-bottom: 13px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100vw;
+}
+
+html,
+body {
+    font-family: Poppins, sans-serif;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+fieldset
+{
+	margin-left: 400px;
+    margin-right: 400px;
+}
+
+legend
+{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: larger;
+}
+
+input {
+    border: 1px solid inherit;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em 2em;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.navbar-item a {
+    margin: 0 0.5em;
+    color: var(--text-color);
+}
+
+.btn {
+    background-color: #e96632;
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.hero {
+    background: var(--main-color);
+    background-image: linear-gradient(rgb(39, 174, 95, .1), rgb(39, 174, 95, 1)), url('asset/img/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.hero-title {
+    flex-wrap: wrap;
+    padding: 0em;
+}
+
+.hero-title h1 {
+    font-size: 3em;
+}
+
+.hero .login-form form,
+.hero .login-form {
+    padding: 1em;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 20px;
+}
+
+.login-form h3 {
+    color: #111;
+    text-align: center;
+}
+
+.login-form input {
+    display: inline;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+}
+
+.login-form button {
+    margin: 1em;
+    font-size: 20px;
+}
+
+.hero .regis-form form,
+.hero .regis-form {
+    padding: 1em;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 20px;
+}
+
+.regis-form h3 {
+    color: #111;
+    text-align: center;
+}
+
+.regis-form input {
+    display: inline;
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+}
+
+.regis-form button {
+    margin: 1em;
+    font-size: 20px;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+.feature {
+    text-align: center;
+    padding: 2em;
+    margin: 20px;
+}
+
+.feature-icon {
+    width: 8em;
+    height: 8em;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.offer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 2em auto;
+}
+
+.offer > div {
+    padding: 1em 0 2em;
+}
+
+.offer-login {
+    flex: 2;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.offer-login .btn {
+    padding: 1em 2.5em;
+}
+.offer-login h3 {
+    color: var(--main-color);
+    font-size: 37px;
+    margin: .5em 0;
+}
+
+.offer-contact {
+    flex: 1;
+    color: var(--main-color);
+    background-color: #d8d8d8;
+}
+
+.offer-contact {
+    flex: 5;
+    color: var(--main-color);
+    background-color: #d8d8d8;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.contact ul {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 50%;
+    list-style-type: none;
+}
+
+.jumbotron {
+    background-color: var(--main-color);
+    text-align: center;
+    padding: 4em 0;
+}
+
+.searchbox {
+    display: flex;
+    padding: 4em auto;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.searchbox input {
+    flex: 4 0 8em;
+    border-radius: 20px;
+    padding: 1em 3em 1em 1em;
+}
+
+.searchbox button {
+    flex: 1 0 auto;
+    padding: 1em;
+    margin-left: -3em;
+}
+
+.search-res {
+    display: flex;
+    padding: 2em;
+    flex-flow: row wrap;
+    background-color: var(--secondary-color);
+}
+
+.result {
+    display: flex;
+    border-radius: 1em;
+    margin: 1em;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+
+.result-desc h3 {
+    margin: .5em 0;
+    padding: 0;
+}
+
+.result-desc > img,
+.result-desc > div {
+    flex: 1 0 10em;
+}
+
+.result-desc {
+    padding: 1em 1.5em;
+}
+
+.result-desc a div {
+    margin: 1em .5em;
+}
+
+.description {
+    display: flex;
+    margin: 1em 0;
+}
+
+.description > div {
+    padding: 9em;
+}
+
+.desc-left img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.desc-contact {
+    display: flex;
+    margin: 2em auto;
+}
+
+.desc-contact-hint {
+    background-color: #e96632;
+    border-radius: 1em;
+    padding: 1em 2em;
+    color: var(--text-color);
+    padding-right: 8em;
+}
+
+.desc-contact-phone {
+    background-color: var(--secondary-color);
+    color: #111;
+    border-radius: 1em;
+    padding: 1em;
+    margin-left: -7em;
+}
+
+.form-tambah{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.desc-right > h1,
+.desc-right > h2,
+.desc-right > h3 {
+    margin: .3em 0;
+}
+
+.font-desc {
+    font-size: 15px;
+    font-family:"Arial"
+}
+
+.regisword{
+    color: #27ae5f;
+}
+
+#footer {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.btnopsi {
+    margin: 5% auto;
+    width : 100px;
+    text-align: center;
+    vertical-align: middle;
+}
